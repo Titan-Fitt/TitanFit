@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+ 
+/* HEADER */
+header {
+    padding: 12px 30px;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #ff6600 33%, #7c3aed 33%, #7c3aed 66%, #ff6600 66%) 1;
+}
+ 
+header img {
+    height: 90px;
+    object-fit: contain;
+}
+ 
+/* NAV — removido o gap/padding duplicado do nav pai */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 16px 40px;
+}
+ 
+nav ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+ 
+nav ul li a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+ 
+/* SEÇÕES */
+#quem-somos,
+#o-que-fazemos,
+#proposito-e-visao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+    gap: 60px;
+}
+ 
+/* "O que fazemos" — inverte a ordem para imagem ficar à esquerda */
+#o-que-fazemos {
+    flex-direction: row-reverse;
+}
+ 
+/* Sub-seções dentro de Propósito e Visão */
+#proposito-e-visao section {
+    display: block;
+    padding: 0;
+    border: none;
+}
+ 
+/* ARTICLE */
+article {
+    flex: 1;
+    max-width: 451px;
+    border-left: 3px solid #ff6600;
+    padding-left: 16px;
+}
+ 
+h2 {
+    color: #4caf50;
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+ 
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+ 
+article p {
+    color: #cccccc;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+ 
+/* FIGURE / IMAGEM */
+figure {
+    flex: 1;
+    margin: 0;
+    overflow: hidden;
+    max-width: 500px;
+}
+ 
+figure img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position:  top center;
+    filter: grayscale(100%);
+    display: block;
+    border-radius: 40px;
+}
+ 
+/* Bordas arredondadas por seção */
+#quem-somos figure img {
+    border-radius: 100px 0 0 100px;
+}
+
+#o-que-fazemos article h2 {
+    text-align: right;
+}
+
+#o-que-fazemos article p {
+   text-align: right;
+   font-size: 20px;
+   line-height: 1.5;
+   text-align: justify;
+
+}
+
+#o-que-fazemos article {
+    border-left: none;
+    border-right: 3px solid #ff6600;
+    padding-left: 0;
+    padding-right: 16px;
+    text-align: right;
+}
+ 
+#o-que-fazemos figure img {
+    border-radius: 0 100px 100px 0;
+}
+ 
+#proposito-e-visao figure img {
+    border-radius: 100px 0 0 100px;
+}
+ 
+@media (max-width: 900px) {
+ 
+    nav ul {
+        gap: 24px;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+ 
+    #quem-somos,
+    #o-que-fazemos,
+    #proposito-e-visao {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+ 
+    figure {
+        max-width: 100%;
+    }
+ 
+    figure img {
+        height: 360px;
+    }
+ 
+    article {
+        max-width: 100%;
+    }
+}
+ 
+@media (max-width: 600px) {
+ 
+    header {
+        padding: 10px 16px;
+        text-align: center;
+    }
+ 
+    header img {
+        height: 70px;
+    }
+ 
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0 20px;
+    }
+ 
+    /* Seções em coluna (texto em cima, imagem embaixo) */
+    #quem-somos,
+    #o-que-fazemos,
+    #proposito-e-visao {
+        flex-direction: column;
+        padding: 30px 16px;
+        gap: 20px;
+    }
+ 
+    /* remove inversão do "O que fazemos" no mobile */
+    #o-que-fazemos {
+        flex-direction: column;
+    }
+ 
+    article {
+        order: 2;
+        border-left: none;
+        border-top: 3px solid #ff6600;
+        padding-left: 0;
+        padding-top: 12px;
+    }
+
+    figure {
+    order: 1;
+}
+ 
+    h2 {
+        font-size: 16px;
+    }
+ 
+    article p {
+        font-size: 13px;
+    }
+ 
+    figure img {
+        height: 340px;
+        border-radius: 24px;
+    }
+}

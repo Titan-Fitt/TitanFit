@@ -1,0 +1,291 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+ 
+/* HEADER */
+header {
+    padding: 12px 30px;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #ff6600 33%, #7c3aed 33%, #7c3aed 66%, #ff6600 66%) 1;
+}
+ 
+header img {
+    height: 90px;
+    object-fit: contain;
+}
+ 
+/* NAV — removido o gap/padding duplicado do nav pai */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 16px 40px;
+}
+ 
+nav ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+ 
+nav ul li a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            padding: 60px 30px;
+            min-height: calc(100vh - 60px);
+        }
+
+        .card-basico,
+        .card-premium {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 260px;
+            min-height: 680px;
+            border-radius: 25px;
+            padding: 30px 20px 20px;
+        }
+
+        .card-basico {
+            border: 5px solid #7c3aed;
+        }
+
+        .card-premium {
+            border: 5px solid #ff6600;
+        }
+
+        .card-basico h2,
+        .card-premium h2 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .card-basico ul,
+        .card-premium ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            flex: 1;
+        }
+
+        .card-basico ul li,
+        .card-premium ul li {
+            color: #cccccc;
+            font-size: 19px;
+            line-height: 1.5;
+        }
+
+        .card-basico button,
+        .card-premium button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .card-basico button {
+            background-color: #7c3aed;
+            color: #ffffff;
+        }
+
+        .card-premium button {
+            background-color: #ff6600;
+            color: #ffffff;
+        }
+
+        .card-basico button:hover,
+        .card-premium button:hover {
+            opacity: 0.85;
+        }
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 12px 30px;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #ff6600 33%, #7c3aed 33%, #7c3aed 66%, #ff6600 66%) 1;
+}
+
+header img {
+    height: 90px;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 16px 40px;
+}
+
+nav ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 60px 30px;
+    min-height: calc(100vh - 60px);
+}
+
+.card-basico,
+.card-premium {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    min-height: 710px;
+    border-radius: 25px;
+    padding: 30px 20px 20px;
+}
+
+.card-basico {
+    border: 5px solid #7c3aed;
+}
+
+.card-premium {
+    border: 5px solid #ff6600;
+}
+
+.card-basico h2,
+.card-premium h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.card-basico ul,
+.card-premium ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    flex: 1;
+}
+
+.card-basico ul li,
+.card-premium ul li {
+    color: #cccccc;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.card-basico button,
+.card-premium button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.card-basico button {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
+
+.card-premium button {
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.card-basico button:hover,
+.card-premium button:hover {
+    opacity: 0.85;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    main {
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .card-basico {
+        width: 220px;
+    }
+
+    .card-premium {
+        width: 220px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 16px;
+        min-height: auto;
+    }
+
+    .card-basico,
+    .card-premium {
+        width: 100%;
+        min-height: auto;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 12px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    header img {
+        height: 60px;
+    }
+}
