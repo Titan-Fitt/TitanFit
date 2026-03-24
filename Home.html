@@ -14,19 +14,22 @@
 </head>
 <body>
     <!--TOPO-->
-    <header>
-        <img src="fotos/logo_texto 1.png" id="logo">
-        <button id="btnMenu" class="btn-menu">☰</button>
-        <div class="menu" id="menu">
-            <ul id="listaMenu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Sobre nós</a></li>
-                <li><a href="">Plano Premium</a></li>
-                <li><a href="">Login</a></li>
-            </ul>
-        </div>
-    </header>
+   
+<header>
+    <img src="fotos/logo_texto 1.png" id="logo">
+
+    <button id="btnMenu" class="btn-menu">☰</button>
+
+    <nav class="menu">
+        <ul id="listaMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Plano Premium</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <div class="tela_principal">
@@ -54,6 +57,19 @@
             </div>
         </section>
     </main>
+    <script>
+const btn = document.getElementById("btnMenu");
+const menu = document.getElementById("listaMenu");
 
+btn.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+});
+
+document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.remove("ativo");
+    }
+});
+</script>
 </body>
 </html>
