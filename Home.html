@@ -7,29 +7,33 @@
     <title>Tela inical</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/menu.css">
 
     <!-- fontes google -->
 </head>
-
 <body>
 
     <!-- TOPO -->
     <header>
-        <img src="fotos/logo_texto 1.png" id="logo">
+    <img src="fotos/logo_texto 1.png" alt="Titan Fit">
 
-        <button id="btnMenu" class="btn-menu">☰</button>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+</header>
 
-        <nav class="menu">
-            <ul id="listaMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Plano Premium</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav id="menu">
+    <div class="close-menu" onclick="toggleMenu()">✖</div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="Planos.html">Plano Premium</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+</nav>
 
     <main>
         <div class="tela_principal">
@@ -68,19 +72,10 @@
         </section>
     </main>
 
-    <script>
-const btn = document.getElementById("btnMenu");
-const menu = document.getElementById("listaMenu");
-
-// abre/fecha ao clicar no botão
-btn.addEventListener("click", () => {
-    menu.classList.toggle("ativo");
-});
-
-// fecha ao clicar em qualquer item do menu
-menu.addEventListener("click", () => {
-    menu.classList.remove("ativo");
-});
+  <script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
 </script>
 
 </body>

@@ -1,121 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+     box-sizing: border-box;
+    }
+    
+html {
+  scrollbar-gutter: stable;
 }
-
 body {
-    background-color: #262626;
+   background-color: #262626;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 /* ===================== LOGO ===================== */
-#logo {
-    width: 90px;
-}
-
-/* ===================== HEADER ===================== */
-header {
-    position: relative;
-}
-
-/* ===================== MENU ===================== */
-.menu {
-    text-align: center;
-    border-top: 5px solid;
-    border-image: linear-gradient(
-        to right,
-        #F26B2B 0%,
-        #F26B2B 33.33%,
-        #6F0CD8 33.33%,
-        #6F0CD8 66.66%,
-        #F26B2B 66.66%,
-        #F26B2B 100%
-    );
-    border-image-slice: 1;
-    padding: 5px;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.menu ul li {
-    padding: 10px;
-    list-style: none;
-    font-size: 20px;
-}
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    transition: 0.3s;
-}
-
-/* Hover */
-.menu a:hover {
-    color: #F26B2B;
-}
-
-/* Linha animada */
-.menu a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(to right, #F26B2B, #F26B2B);
-    transition: 0.4s;
-    transform: translateX(-50%);
-}
-
-.menu a:hover::after {
-    width: 100%;
-}
-
-/* Botão menu */
-.btn-menu {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 25px;
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    z-index: 10;
-    cursor: pointer;
-}
-
-/* ===================== RESPONSIVO MENU ===================== */
-@media (max-width: 768px) {
-    .btn-menu {
-        display: block;
-        top: 0;
-        font-size: 40px;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #262626;
-        display: none;
-    }
-
-    .menu ul li {
-        text-align: center;
-        border-bottom: 1px solid #444;
-    }
-
-    .menu ul.ativo {
-        display: flex;
-    }
-}
 
 /* ===================== TELA PRINCIPAL ===================== */
 .tela_principal img {
