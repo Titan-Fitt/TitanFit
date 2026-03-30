@@ -1,291 +1,97 @@
-    * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+html {
+  scrollbar-gutter: stable;
+}
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #262626;
     font-family: Arial, sans-serif;
+    color: white;
 }
- 
-/* HEADER */
-header {
-    padding: 12px 30px;
-    border-bottom: 4px solid;
-    border-image: linear-gradient(to right, #ff6600 33%, #7c3aed 33%, #7c3aed 66%, #ff6600 66%) 1;
-}
- 
-header img {
-    height: 90px;
-    object-fit: contain;
-}
- 
-/* NAV — removido o gap/padding duplicado do nav pai */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 16px 40px;
-}
- 
-nav ul li a {
-    color: #aaaaaa;
-    text-decoration: none;
-    font-size: 14px;
-}
- 
-nav ul li a:hover {
-    color: #ff6600;
-    text-decoration: underline;
-}
-
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-            padding: 60px 30px;
-            min-height: calc(100vh - 60px);
-        }
-
-        .card-basico,
-        .card-premium {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 260px;
-            min-height: 680px;
-            border-radius: 25px;
-            padding: 30px 20px 20px;
-        }
-
-        .card-basico {
-            border: 5px solid #7c3aed;
-        }
-
-        .card-premium {
-            border: 5px solid #ff6600;
-        }
-
-        .card-basico h2,
-        .card-premium h2 {
-            text-align: center;
-            font-size: 25px;
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        .card-basico ul,
-        .card-premium ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 17px;
-            flex: 1;
-        }
-
-        .card-basico ul li,
-        .card-premium ul li {
-            color: #cccccc;
-            font-size: 19px;
-            line-height: 1.5;
-        }
-
-        .card-basico button,
-        .card-premium button {
-            width: 100%;
-            padding: 15px;
-            border: none;
-            border-radius: 20px;
-            font-size: 17px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 30px;
-        }
-
-        .card-basico button {
-            background-color: #7c3aed;
-            color: #ffffff;
-        }
-
-        .card-premium button {
-            background-color: #ff6600;
-            color: #ffffff;
-        }
-
-        .card-basico button:hover,
-        .card-premium button:hover {
-            opacity: 0.85;
-        }
-
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    padding: 12px 30px;
-    border-bottom: 4px solid;
-    border-image: linear-gradient(to right, #ff6600 33%, #7c3aed 33%, #7c3aed 66%, #ff6600 66%) 1;
-}
-
-header img {
-    height: 90px;
-    object-fit: contain;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 16px 40px;
-}
-
-nav ul li a {
-    color: #aaaaaa;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-nav ul li a:hover {
-    color: #ff6600;
-    text-decoration: underline;
-}
-
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding: 60px 30px;
-    min-height: calc(100vh - 60px);
+    gap: 80px;
+    margin-top: 80px;
+    padding: 10px;
 }
-
 .card-basico,
 .card-premium {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 260px;
-    min-height: 710px;
-    border-radius: 25px;
-    padding: 30px 20px 20px;
-}
-
-.card-basico {
-    border: 5px solid #7c3aed;
-}
-
-.card-premium {
-    border: 5px solid #ff6600;
-}
-
-.card-basico h2,
-.card-premium h2 {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.card-basico ul,
-.card-premium ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    flex: 1;
-}
-
-.card-basico ul li,
-.card-premium ul li {
-    color: #cccccc;
-    font-size: 19px;
-    line-height: 1.5;
-}
-
-.card-basico button,
-.card-premium button {
-    width: 100%;
-    padding: 15px;
-    border: none;
+    padding: 25px;
     border-radius: 20px;
-    font-size: 17px;
-    font-weight: bold;
+    position: relative;
+    min-height: 420px;
+}
+h2 {
+    margin-bottom: 15px;
+}
+ul {
+    font-size: 13px;
+    line-height: 1.6;
+}
+ul li {
+    margin-bottom: 10px;
+}
+button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    color: white;
     cursor: pointer;
-    margin-top: 30px;
+    font-size: 15px;
+    margin: -14px 0;
 }
+.card-basico {
+    border: 2px solid #6f0cd8;
 
+}
 .card-basico button {
-    background-color: #7c3aed;
-    color: #ffffff;
+    background: linear-gradient(90deg, #6a0dad, #a855f7);
 }
+.card-premium {
+    border: 2px solid #ff6600;
 
+}
 .card-premium button {
-    background-color: #ff6600;
-    color: #ffffff;
+     background: linear-gradient(90deg, #ff6600, #ff7a3d);
 }
-
-.card-basico button:hover,
-.card-premium button:hover {
-    opacity: 0.85;
+.card-basico:hover,
+.card-premium:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
 }
-
-/* TABLET */
-@media (max-width: 900px) {
-    main {
-        gap: 40px;
-        padding: 40px 20px;
-    }
-
-    .card-basico {
-        width: 220px;
-    }
-
-    .card-premium {
-        width: 220px;
-    }
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
-
-/* CELULAR */
-@media (max-width: 600px) {
+@media (max-width: 425px) {
+   
     main {
         flex-direction: column;
-        gap: 30px;
-        padding: 30px 16px;
-        min-height: auto;
+        align-items: center;
+        gap: 40px;
+        margin-top: 50px;
     }
-
-    .card-basico,
-    .card-premium {
-        width: 100%;
-        min-height: auto;
+    .card-basicon,.card-premium {
+        width: 90%;
+        max-width: 260px;
     }
-
-    nav ul {
-        gap: 20px;
-        flex-wrap: wrap;
-        padding: 12px;
+    ul {
+        font-size: 14px;
+      
     }
-
-    nav ul li a {
-        font-size: 12px;
+    button {
+        font-size: 16px;
+      
     }
-
-    header img {
-        height: 60px;
-    }
+   
 }
+ 
