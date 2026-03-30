@@ -10,6 +10,116 @@ body {
 
 }
 
+ 
+header {
+    width: 100%;
+  padding: 12px 30px;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #ff6600 33%, #7c3aed 33%, #7c3aed 66%, #ff6600 66%) 1;
+  display: flex;
+  justify-content: space-between; /* 🔥 ESSENCIAL */
+  align-items: center;
+}
+ 
+header img {
+ 
+ 
+ 
+  height: 60px;
+ 
+ 
+ 
+  object-fit: contain;
+ 
+ 
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* NAV */
+ 
+ 
+ 
+nav ul {
+ 
+ 
+ 
+  list-style: none;
+ 
+ 
+ 
+  display: flex;
+ 
+ 
+ 
+  justify-content: center;
+ 
+ 
+ 
+  align-items: center;
+ 
+ 
+ 
+  gap: 50px;
+ 
+ 
+ 
+  padding: 16px 40px;
+ 
+ 
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+nav ul li a {
+ 
+ 
+ 
+  color: #aaaaaa;
+ 
+ 
+ 
+  text-decoration: none;
+ 
+ 
+ 
+  font-size: 14px;
+ 
+ 
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+nav ul li a:hover {
+ 
+ 
+ 
+  color: #ff6600;
+ 
+ 
+ 
+  text-decoration: underline;
+  
+ 
+ 
+ 
+}
+ 
 
 h2 {
     color: #56C049;
