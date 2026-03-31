@@ -4,73 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
+    <title>Tela inical</title>
 
+    <!-- css -->
+ <link rel="stylesheet" href="css/estilo.css">
+
+
+    <!-- fontes google -->
+</head>
 <body>
 
+    <!-- TOPO -->
     <header>
-        <nav>
-            <strong>Titan⚡Fit</strong>
+    <img src="fotos/logo_txt.png" alt="Titan Fit">
 
-            <ul>
-                <li><a href="serviços">Serviços</a></li>
-                <li><a href="sobre-nos">Sobre-nós</a></li>
-                <li><a href="plano-premium">Plano-Premium</a></li>
-                <li><a href="login.html">Login👤</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+</header>
 
-    <section id="Sobre-nós">
-        <h2>Quem nós somos</h2>
-        <article>
-            <p>A TitanFit é um aplicativo que une tecnologia e personalização para ajudar pessoas de qualquer nível a
-                cuidarem da saúde e evoluírem no treino, em casa, na academia ou ao ar livre. Mais do que treinos,
-                oferece acompanhamento inteligente e se propõe a ser um parceiro constante na busca por saúde,
-                disciplina e qualidade de vida.</p>
-        </article>
-        <figure>
-            <img src="fotos/Atleta treinando.jpg" alt="">
-        </figure>
-        <section id="O-que-fazemos">
-            <h2>O que fazemos</h2>
-            <article>
-                <p>A TitanFit oferece treinos inteligentes e personalizados,
-                    adaptados ao perfil,
-                    objetivos e rotina de cada usuário, com foco em segurança e eficiência. Além dos treinos, o app
-                    acompanha resultados,
-                    sugere hábitos saudáveis e
-                    oferece orientações de bem-estar,
-                    ajudando a transformar
-                    constância em resultados reais.
+<nav id="menu">
+    <div class="close-menu" onclick="toggleMenu()">✖</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="serviços.html">Serviços</a></li>
+        <li><a href="sobre-nos.html">Sobre nós</a></li>
+        <li><a href="planos.html">Plano Premium</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <div id="tela_principal">
+            <div id="quadrado">
+                <p>
+                    Treinar é um compromisso pessoal que fortalece o corpo e a mente, desenvolvendo disciplina, foco e
+                    constância, além de trazer mais energia, saúde e bem-estar. Para tornar esse processo mais eficiente
+                    e motivador, o TitanFit oferece treinos personalizados conforme seus objetivos, nível e rotina,
+                    ajudando você a evoluir com segurança e inteligência.
                 </p>
-            </article>
-        </section>
-        <figure>
-            <img src="fotos/Mulher treinando com halteres.png" alt="">
-        </figure>
-        <section id="Propósito-e-Visão">
-            <article>
-                <h2>Propósito-e-Visão</h2>
+                <button>iniciar</button>
+            </div>
 
-                <section>
-                    <h3>Propósito:</h3>
-                    <p>Empoderar pessoas a cuidarem da saúde de forma acessível e personalizada, com treinos
-                        inteligentes adaptados a diferentes realidades, objetivos e limitações.</p>
+            <img 
+                src="fotos/cbum.cortado.png"
+                alt="Homem musculoso posando em academia em frente ao espelho, destacando a definição do tronco e dos braços em uma foto em preto e branco."
+            >
+        </div>
 
-                    <section>
-                        <h3>Visão:</h3>
-                        <p>Ser a principal plataforma digital de treinos personalizados e bem-estar, transformando a
-                            relação das pessoas com a atividade física por meio de tecnologia, educação e
-                            personalização.</p>
-                    </section>
-                    <figure>
-                        <img src="fotos/Atleta com halteres.jpg" alt="">
-                    </figure>
-                </section>
-            </article>
+        <section id="logo2">
+            <img 
+                src="fotos/logo.png"
+                alt="Ícone de capacete espartano estilizado nas cores roxo e branco, com detalhes laranja ao fundo."
+                id="imagem"
+            >
+
+            <div id="baixo">
+                <p>Baixe nosso aplicativo</p>
+
+                <img 
+                    src="fotos/android.png"
+                    alt="logo android"
+                    id="imagen"
+                >
+            </div>
         </section>
+    </main>
+
+  <script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
 </body>
 
 </html>

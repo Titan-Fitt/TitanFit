@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap%27');
 
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap%27');
-        *{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
- 
-body{
-    background-color: #262626;
- 
+
+body {
+    background-color: 262626;
+
 }
- 
 
  
 header {
@@ -122,206 +121,183 @@ nav ul li a:hover {
 }
  
 
-h2{
-    color:#189b07;}
- 
-        .gostoso {
-            width: 45%;
-            border-top-left-radius:  18%;
-            border-bottom-left-radius: 18%;
-            border-bottom: solid 4px #ffffff;
-        }
- 
-        section {
-            display: flex;
-            align-items: stretch;
-            padding: 60px 40px;
-            gap: 40px;
-        }
-   
-        article{
-            flex: 1;
-            max-width: 95%;
-       
-        }
- 
- 
-        article p{
-            color: #cccccc;
-            font-size: 28px;
-            line-height: 1.5;
-            border-left: 4px solid #ff5722;
-            padding-left: 16px;
-            font-family: 'IBM Plex Sans', sans-serif;
-            text-align: justify;
-            min-width: 300px;
-        }
-       
-        h2{
-            font-size: 40px;
-            margin-bottom: 20px;
-            font-family: 'Montserrat', sans-serif;
-            margin-left: 35px;
-           
-        }
- 
-        .gostoso2{
-        flex: 1;
-        .gostoso2{
+h2 {
+    color: #56C049;
+}
+
+.gostoso {
+    width: 45%;
+    border-top-left-radius: 18%;
+    border-bottom-left-radius: 18%;
+    border-bottom: solid 4px #ffffff;
+}
+
+section {
+    display: flex;
+    align-items: stretch;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+article {
+    flex: 1;
+    max-width: 95%;
+
+}
+
+
+article p {
+    color: #cccccc;
+    font-size: 28px;
+    line-height: 1.5;
+    border-left: 4px solid #ff5722;
+    padding-left: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: justify;
+    min-width: 300px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 35px;
+
+}
+
+.gostoso2 {
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space space-between;
 }
-        }
-       
-        .logo{
-            width: 10%
-        }
-       
-       @media (max-width: 1440px){
-        article p {
-            font-size: 25px;
-            line-height: 1.8;
-            padding-left: 16px;
-        }
-       }
- 
- 
-@media (max-width: 1024px){
-    .gostoso{
+
+.logo {
+    width: 10%
+}
+
+@media (max-width: 1440px) {
+    article p {
+        font-size: 25px;
+        line-height: 1.8;
+        padding-left: 16px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .gostoso {
         width: 50%;
         border-bottom: solid 4px #ffffff;
     }
+
     article p {
         font-size: 18px;
         line-height: 1.8;
         padding-left: 14px;
     }
+
     h2 {
         font-size: 25px;
         margin-left: 20px;
         padding: 0px;
     }
 }
- 
-  @media  (max-width: 768px) {
-            .gostoso {
-                width: 55%;
-                border-bottom: solid 4px #ffffff;
-            }
-           
-            section {
-                flex-direction: column;
-                padding: 25px;
-            }
-           
-            article p {
-                font-size: 1.1em;
-                line-height: 1.5;
-                padding-left: 12px;    
-            }
-           
-            h2 {
-                font-size: 28px;
-                margin-left: 12px;
-                padding: 0px;
-            }
-        }
- 
-        @media (max-width: 425px) {
-            .gostoso {
-                width: 100%;
-                border-bottom: solid 4px #ffffff;
-                display: block;
-                text-align: right;
-            }
-           
-            section {
-                flex-direction: column;
-                padding: 15px;
-            }
-           
-            article p {
-                position: absolute;
-                top: 360px;
-                left: 55px;
-                color: #ffffff;
-                z-index: 1;    
-                font-size: 1.1em;
-            }
-           
-            h2 {
-                font-size: 24px;
-                margin-left: 10px;
-                padding: 0px;
-                 position: absolute;
-                top: 320px;
-                left: 60px;
-                color: #167209;
-                z-index: 1;    
-            }
-            .gostoso2{
-                position: relative;
-                display: inline-block;
-            }
-        }
- 
-        @media (max-width: 320px) {
-            .gostoso {
-                width: 350px;
-                border-bottom: solid 4px #ffffff;
-                display: block;
-                margin-left: auto;
-             
-            }
-           
-            section {
-                flex-direction: column;
-                padding: 10px;
-            }
-           
-            article p {
-                position: absolute;
-                top: 300px;
-                left: 20px;
-                color: #ffffff;
-                z-index: 1;    
-                font-size: 1.1em;
-            }
 
+@media (max-width: 768px) {
+    .gostoso {
+        width: 55%;
+        border-bottom: solid 4px #ffffff;
+    }
 
-           
-            h2 {
-                font-size: 22px;
-                margin-left: 10px;
-                padding: 0px;
-                 position: absolute;
-                top: 256px;
-                left: 20px;
-                color: #167209;
-                z-index: 1;    
-            }
-            .gostoso2{
-                position: relative;
-                display: inline-block;
-            }
-        }
+    section {
+        flex-direction: column;
+        padding: 25px;
+    }
 
-        .gostoso2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    article p {
+        font-size: 1.1em;
+        line-height: 1.5;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-left: 12;
+        padding: 0px;
+    }
 }
 
-#menu {
-    display: none;
+@media (max-width: 425px) {
+    .gostoso {
+        width: 100%;
+        border-bottom: solid 4px #ffffff;
+        display: block;
+        text-align: right;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    article p {
+        top: 350px;
+        left: 55px;
+        color: #ffffff;
+        z-index: 1;
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-left: 10px;
+        padding: 0px;
+        position: absolute;
+        top: 306px;
+        left: 20px;
+        color: #ffffff;
+        z-index: 1;
+    }
+
+    .gostoso2 {
+        position: relative;
+        display: inline-block;
+    }
 }
 
-#menu.active {
-    display: block;
+@media (max-width: 320px) {
+    .gostoso {
+        width: 100%;
+        border-bottom: solid 4px #ffffff;
+        display: block;
+       
+
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    article p {
+        top: 300px;
+        left: 20px;
+        color: #ffffff;
+        font-size: 10px;
+       
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-left: 10px;
+        top: 256px;
+        left: 20px;
+        color: #ffffff;
+        z-index: 1;
+    }
+    #servicos p{
+         max-width: 320px;
+    }
+
+   
 }
-
-
-
-

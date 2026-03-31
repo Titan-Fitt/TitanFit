@@ -5,62 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>planos</title>
-    <link rel="stylesheet" href="css/premium.css">
-    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
-<body 
->
-   <header>
-    <img src="fotos/logo_texto 1.png" alt="Titan Fit">
-
-<<<<<<< HEAD
+<body>
+    <!-- TOPO -->
     <header>
-        <img src="img/logo-com-nome.png" alt="Titan Fit">
+    <img src="fotos/logo_txt.png" alt="Titan Fit">
 
-         <div class="menu">
-            <ul>
-                <li> <a href="Home.html" tabindex="1">Home</a></li>
-                <li><a href="serviços.html" tabindex="1">Serviços</a></li>
-                <li> <a href="sobre-nos.html" tabindex="1">Sobre nós</a></li>
-                <li> <a href="Planos.html" tabindex="1">Planos</a></li>
-                <li>
-                    <a href="" tabindex="1">Login</a></li>
- 
-            </ul>
-        </div>
-    </header>
-=======
     <div class="menu-toggle" onclick="toggleMenu()">
         ☰
     </div>
 </header>
->>>>>>> d920eefe475106c78954730160bd7fd3f7fd0d01
 
 <nav id="menu">
     <div class="close-menu" onclick="toggleMenu()">✖</div>
 
     <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Sobre nós</a></li>
-        <li><a href="#">Plano Premium</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="serviços.html">Serviços</a></li>
+        <li><a href="sobre-nos.html">Sobre nós</a></li>
+        <li><a href="planos.html">Plano Premium</a></li>
         <li><a href="#">Login</a></li>
     </ul>
 </nav>
 
     <main>
-        <div class="card-basico">
-            <h2>Basico</h2>
-            <ul> 
+    <main id="conteudo_plano">
+        <div id="card-basico">
+            <h2 id="titulo_planos">Basico</h2>
+            <ul id="lista_plano"> 
                 <li>Treinos básicos personalizados com base em peso, idade e objetivo</li>
                 <li>Acesso inicial á biblioteca de exercícios</li>
                 <li>Sugestões simples de rotiinas de treino</li>
                 <li>Acesso á loja de suplementos</li>
             </ul>
-            <button>Iniciar</button>
+            <button id="btn_planos">Iniciar</button>
         </div>
-        <div class="card-premium">
+        <div id="card-premium">
             <h2>Premium</h2>
             <ul>
                 <li>Todos os recursos do plano básico</li>
@@ -69,7 +51,7 @@
                 <li>Dietas personalizadas conforme objetivos</li>
                 <li>Prioridade no suporte e acesso antecipado a novos recursos</li>
             </ul>
-            <button>Iniciar</button>
+            <button id="btn_planos">Iniciar</button>
         </div>
     </main>
 
