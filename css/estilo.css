@@ -13,6 +13,7 @@ body {
 /*MENU*/
 /* HEADER IGUAL AO PRIMEIRO */
 header {
+    
   padding: 12px 30px;
   border-bottom: 4px solid;
   border-image: linear-gradient(
@@ -433,3 +434,7 @@ nav ul li a:hover {
     }
    
 }
+
+/*-------------------------------------------------serviços---------------------------------*/
+
+ 

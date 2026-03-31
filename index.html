@@ -7,33 +7,34 @@
     <title>Tela inical</title>
 
     <!-- css -->
- <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
 
     <!-- fontes google -->
 </head>
+
 <body>
 
     <!-- TOPO -->
     <header>
-    <img src="fotos/logo_txt.png" alt="Titan Fit">
+        <img src="fotos/logo_txt.png" alt="Titan Fit">
 
-    <div class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </div>
-</header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
 
-<nav id="menu">
-    <div class="close-menu" onclick="toggleMenu()">✖</div>
+    <nav id="menu">
+        <div class="close-menu" onclick="toggleMenu()">✖</div>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="serviços.html">Serviços</a></li>
-        <li><a href="sobre-nos.html">Sobre nós</a></li>
-        <li><a href="planos.html">Plano Premium</a></li>
-        <li><a href="#">Login</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre-nos.html">Sobre nós</a></li>
+            <li><a href="planos.html">Plano Premium</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div id="tela_principal">
@@ -47,36 +48,28 @@
                 <button>iniciar</button>
             </div>
 
-            <img 
-                src="fotos/cbum.cortado.png"
-                alt="Homem musculoso posando em academia em frente ao espelho, destacando a definição do tronco e dos braços em uma foto em preto e branco."
-            >
+            <img src="fotos/cbum.cortado.png"
+                alt="Homem musculoso posando em academia em frente ao espelho, destacando a definição do tronco e dos braços em uma foto em preto e branco.">
         </div>
 
         <section id="logo2">
-            <img 
-                src="fotos/logo.png"
+            <img src="fotos/logo.png"
                 alt="Ícone de capacete espartano estilizado nas cores roxo e branco, com detalhes laranja ao fundo."
-                id="imagem"
-            >
+                id="imagem">
 
             <div id="baixo">
                 <p>Baixe nosso aplicativo</p>
 
-                <img 
-                    src="fotos/android.png"
-                    alt="logo android"
-                    id="imagen"
-                >
+                <img src="fotos/android.png" alt="logo android" id="imagen">
             </div>
         </section>
     </main>
 
-  <script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("active");
-}
-</script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
 
 </body>
 
