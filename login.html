@@ -1,47 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Login</title>
-</head>
-<body>
-<div class="modal">
-    <button class="fechar">X</button>
+<!-- Modal de Login -->
+<div id="login-overlay" class="login-overlay hidden" aria-hidden="true">
 
-    <figure>
-        <img src="fotos/logo2.png" alt="">
+  <div class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+
+    <button type="button" class="fechar" id="login-close" aria-label="Fechar">✖</button>
+
+    <!-- LOGO NO TOPO -->
+    <figure class="logo-topo">
+      <img src="img/logo2.png" alt="Titan Fit">
     </figure>
 
-    <h1>login</h1>
-    <p>Entre na sua conta</p>
+    <h1 id="login-title">Entrar</h1>
+    <p class="subtitle">Faça login para acessar sua conta</p>
 
-    <form>
-        <label for="email">E-mail ou nome de usuario</label>
-        <input type="text" id="email" placeholder="">
+    <form id="login-form" action="#" method="post" novalidate>
 
-        <button type="submit">continuar</button>
+      <label for="login-email">E-mail</label>
+      <input id="login-email" name="email" type="email" placeholder="seu@exemplo.com" required>
 
-        <span class="divisor">ou</span>
+      <label for="login-password">Senha</label>
+      <input id="login-password" name="password" type="password" placeholder="********" required>
 
-        <button type="button" class="btn-social">
-            <img src="fotos/Logo-google-icon.png" alt="">
-            continuar com Google
-        </button>
+      <button type="submit" id="login-submit" class="btn-continuar">
+        entrar
+      </button>
 
-        <button type="button" class="btn-social">
-            <img src="fotos/apple-logo-icon.png" alt="">
-            continuar com Apple
-        </button>
     </form>
-<div class="cadastro-texto">
-    <p>Não tem conta?</p>
-    <a href="cadastro.html">CADASTRA-SE</a>
-</div>
 
-</div>
+    <span class="divisor">ou</span>
 
-    
-</body>
-</html>
+    <button type="button" class="btn-social">
+      <img src="img/Logo-google-icon.png" alt="Google" class="social-icon">
+      <span>continuar com Google</span>
+    </button>
+
+    <button type="button" class="btn-social">
+      <img src="img/apple-logo-icon.png" alt="Apple" class="social-icon">
+      <span>continuar com Apple</span>
+    </button>
+
+    <div class="cadastro-texto">
+      Não tem conta? <a href="cadastro.html">Criar agora</a>
+    </div>
+
+  </div>
+</div>

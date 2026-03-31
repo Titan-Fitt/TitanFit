@@ -1,360 +1,83 @@
+<!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela inical</title>
- 
- 
-    <!--css-->
- 
-    <!--fontes google-->
- 
- 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
- 
-        body {
-            background-color: #262626;
-            font-family: 'IBM Plex San', sans-serif;
- 
-        }
- 
-        /*LOGO EM CIMA*/
-        #logo {
-            width: 10%;
-        }
- 
- 
-        /*MENU EM CIMA*/
-        .menu {
-            text-align: center;
- 
-            border-top: 5px solid;
-            border-image: linear-gradient(to right,
-                    #F26B2B 0%,
-                    #F26B2B 33.33%,
-                    #6F0CD8 33.33%,
-                    #6F0CD8 66.66%,
-                    #F26B2B 66.66%,
-                    #F26B2B 100%);
-            border-image-slice: 1;
-            padding: 10px;
-        }
- 
-        .menu ul {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
- 
-        .menu ul li {
-            padding: 20px;
-            list-style: none;
-            font-size: 25px;
-        }
- 
-        .menu a {
-            color: #fff;
-            text-decoration: none;
- 
-        }
- 
-        /*TELA PRINCIPAL*/
-        .tela_principal img {
-            width: 55%;
-            display: flex;
-            border-bottom: solid 2px #F26B2B;
-            border-left: 3px solid black;
-            border-right: 3px solid black;
-            margin: 0 auto;
- 
-        }
- 
-        .tela_principal p {
-            color: black;
- 
- 
-        }
- 
-        .tela_principal button {
-            background-color: #F26B2B;
-            border: none;
-            border-radius: 15%;
-            padding: 3%;
-            font-size: large;
-            color: #fff;
-        }
- 
-        /*QUADRADO BRANCO*/
- 
-        #quadrado {
-            background-color: rgba(255, 255, 255, 0.5);
-            border-top-left-radius: 10%;
-            border-bottom-left-radius: 10%;
-            padding: 2%;
-            width: 25%;
-            font-size: larger;
-            margin-left: auto;
-            position: absolute;
-            right: 0;
- 
- 
- 
- 
-        }
- 
- 
-        /*LOGO/BAIXE NOSSO APP EM BAIXO*/
-        .logo2 {
- 
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 3%;
-        }
-        .baixo {
- 
-            justify-content: center;
-            align-items: center;
-        }
- 
-        .baixo img {
-            width: 200px;
-        }
- 
-        .baixo p {
-            color: #fff;
-        }
- 
-        .logo2 {
-            font-size: medium;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10%;
-            margin-right: 9%;
-        }
- 
-        .logo2 img {
-            width: 300px;
-            height: 300px;
-            border-radius: 60%;
-            border: 5px solid #6F0CD8;
-        }
- 
-        .baixo img {
-            border: none;
-        }
- 
- 
- 
- 
-        /*  .logo2 p {
-            max-width: 400px;
-            font-size: larger;
-            color: #fff;
-            text-align: justify;
-            position: relative;
-            padding: 35px;
-            line-height: 1.7;
- 
- 
-        }
- 
-        /* canto superior esquerdo */
-        /* .logo2 p::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 60px;
-            height: 60px;
-            border-top: 6px solid #4ade80;
-            border-left: 6px solid #4ade80;
-        }
- 
-        /* canto inferior direito */
-        /* .logo2 p::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 60px;
-            height: 60px;
-            border-bottom: 6px solid #4ade80;
-            border-right: 6px solid #4ade80;
-        }
- 
-        /*----------------------------------------------------------*/
- 
- 
-        /*MENU RESPONSIVO*/
-        @media (max-width: 768px) {
- 
-            /* mostra o botão ☰ no celular */
-            .btn-menu {
-                display: block;
-                margin: 10px auto;
-                /* centraliza o botão */
-            }
- 
-            /* esconde o menu por padrão no celular */
-            .menu {
-                display: none;
-            }
- 
-            /* quando tiver a classe "ativo", o menu aparece */
-            .menu.ativo {
-                display: block;
-            }
- 
-            /* no celular, o menu vira coluna */
-            .menu ul {
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 0;
-            }
- 
-            .menu ul li {
-                font-size: 70px;
-                padding: 12px;
-            }
-        }
- 
-        .btn-menu {
-            display: none;
-            /* escondido no PC */
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 32px;
-            cursor: pointer;
-        }
- 
-        /*TELA TABLET RESPONSIVO*/
-        @media(max-width: 1024px) {
- 
-            #quadrado {
-                font-size: larger;
-            }
- 
-            .logo2 {
-                font-size: medium;
-                justify-content: space-around;
-                align-items: center;
-                padding: 10%;
-                margin-right: 9%;
-            }
- 
-            .logo2 img {
-                width: 200px;
-                height: 200px;
-                border-radius: 60%;
-                border: 5px solid #6F0CD8;
-            }
- 
-            .baixo img {
-                border: none;
-            }
-        }
- 
-        /*TELA CELULAR RESPONSIVO*/
- 
-        @media(max-width: 768px) {
-            .tela_principal img {
-                width: 100%;
-                border-bottom: solid 2px #F26B2B;
-                position: static;
-            }
- 
-            .tela_principal p {
-                color: #fff;
-                padding: 1%;
- 
-            }
- 
-            .tela_principal button {
-                background-color: #F26B2B;
-                border: none;
-                border-radius: 15%;
-                padding: 3%;
-                font-size: large;
-                color: #fff;
- 
-            }
- 
-            #quadrado {
-                position: relative;
-                top: 700px;
-                right: 150px;
-                background: none;
-                width: 50%;
-                text-align: justify;
-                max-width: 400px;
- 
-            }
-        }
-    </style>
+
+    <!-- css -->
+ <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/menu.css">
+
+    <!-- fontes google -->
 </head>
- 
 <body>
- 
-    <!--TOPO-->
-    <header id="topo">
- 
-        <img src="img/logo_texto.png"
-            alt="Ícone de capacete espartano estilizado nas cores roxo e branco, com detalhes laranja ao fundo."
-            id="logo">
- 
-        <button id="btnMenu" class="btn-menu" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
- 
-        <div class="menu" id="menu">
-            <ul>
-                <li> <a href="" tabindex="1">Home</a></li>
-                <li><a href="" tabindex="2">Serviços</a></li>
-                <li> <a href="" tabindex="3">Sobre nós</a></li>
-                <li> <a href="" tabindex="4">Plano Premium</a></li>
-                <li>
-                    <a href="" tabindex="5">Login</a></li>
- 
-            </ul>
-        </div>
-    </header>
+
+    <!-- TOPO -->
+    <header>
+    <img src="fotos/logo_txt.png" alt="Titan Fit">
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+</header>
+
+<nav id="menu">
+    <div class="close-menu" onclick="toggleMenu()">✖</div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="Planos.html">Plano Premium</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+</nav>
+
     <main>
         <div class="tela_principal">
-            <div id="quadrado">
-                <p>Treinar é um compromisso pessoal que fortalece o corpo e a mente, desenvolvendo disciplina, foco e
+            <div class="quadrado">
+                <p>
+                    Treinar é um compromisso pessoal que fortalece o corpo e a mente, desenvolvendo disciplina, foco e
                     constância, além de trazer mais energia, saúde e bem-estar. Para tornar esse processo mais eficiente
-                    e
-                    motivador, o TitanFit oferece treinos personalizados conforme seus objetivos, nível e rotina,
-                    ajudando você
-                    a evoluir com segurança e inteligência.</p>
+                    e motivador, o TitanFit oferece treinos personalizados conforme seus objetivos, nível e rotina,
+                    ajudando você a evoluir com segurança e inteligência.
+                </p>
                 <button>iniciar</button>
             </div>
- 
-            <img src="fotos/cbum_shoppe.png"
+
+            <img 
+                src="fotos/cbum.cortado.png"
                 alt="Homem musculoso posando em academia em frente ao espelho, destacando a definição do tronco e dos braços em uma foto em preto e branco."
-                class="banner">
- 
+            >
         </div>
- 
-        <div class="logo2">
-            <img src="fotos/logo2.png"
+
+        <section class="logo2">
+            <img 
+                src="fotos/logo.png"
                 alt="Ícone de capacete espartano estilizado nas cores roxo e branco, com detalhes laranja ao fundo."
-                class="logo_texto">
- 
- 
+                class="imagem"
+            >
+
             <div class="baixo">
                 <p>Baixe nosso aplicativo</p>
-                <img src="fotos/android.png" alt="logo android">
+
+                <img 
+                    src="fotos/android.png"
+                    alt="logo android"
+                    class="imagen"
+                >
             </div>
-        </div>
- 
+        </section>
     </main>
+
+  <script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
 </body>
- 
+
 </html>
- 
