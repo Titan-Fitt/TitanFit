@@ -14,53 +14,51 @@
 
   <!-- Seu CSS principal -->
 
-  <link rel="stylesheet" href="css/sobre-nos.css">
-
-
-
-  <!-- CSS específico do login/modal -->
-
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/login.css">
+
+  <!-- fontes google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
 
 </head>
 
 
 
 <body>
+    <!-- TOPO -->
+    <header>
+        <img src="fotos/logo_txt.png" alt="Titan Fit">
 
-  <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
 
-  <img src="fotos/logo_txt.png" alt="Titan Fit">
+    <nav id="menu">
+        <div class="close-menu" onclick="toggleMenu()">✖</div>
 
-  <!-- Botão hamburguer -->
-  <div class="menu-toggle">
-    ☰
-  </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos2.html">Serviços</a></li>
+            <li><a href="sobre-nos.html">Sobre nós</a></li>
+            <li><a href="planos.html">Plano Premium</a></li>
+             <li><a href="#" data-open-login id="open-login">👤Login</a></li>
+        </ul>
+    </nav>
 
-</header>
-
-<nav id="menu">
-
-  <div class="close-menu">✖</div>
-
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="sobre-nos.html">Sobre-nós</a></li>
-    <li><a href="#">Serviços</a></li>
-    <li><a href="premium.html">Premium</a></li>
-    <li><a href="#" data-open-login id="open-login">Login</a></li>
-  </ul>
-
-</nav>
-
-
+ 
   <main>
 
     <section id="quem-somos">
 
-      <article>
+      <article id="somos">
 
-        <h2>Quem nós somos</h2>
+        <h2 id="titulo_sobre">Quem nós somos</h2>
 
         <p>A TitanFit é um aplicativo que une tecnologia e personalização para ajudar pessoas de qualquer nível a
 
@@ -84,9 +82,9 @@
 
     <section id="o-que-fazemos">
 
-      <article>
+      <article id="somos">
 
-        <h2>O que fazemos</h2>
+        <h2 id="titulo_sobre">O que fazemos</h2>
 
         <p>A TitanFit oferece treinos inteligentes e personalizados, adaptados ao perfil, objetivos e rotina de
 
@@ -110,9 +108,9 @@
 
     <section id="proposito-e-visao">
 
-      <article>
+      <article id="somos">
 
-        <h2>Propósito e Visão</h2>
+        <h2 id="titulo_sobre">Propósito e Visão</h2>
 
         <section>
 
@@ -228,7 +226,7 @@
 
 
 
-      <div class="cadastro-texto">Não tem conta? <a href="cadastro.html">Criar agora</a></div>
+      <div class="cadastro-texto">Não tem conta? <a href="">Criar agora</a></div>
 
     </div>
 

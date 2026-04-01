@@ -7,58 +7,152 @@
     <title>planos</title>
 
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- fontes google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- TOPO -->
     <header>
-    <img src="fotos/logo_txt.png" alt="Titan Fit">
+        <img src="fotos/logo_txt.png" alt="Titan Fit">
 
-    <div class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </div>
-</header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
 
-<nav id="menu">
-    <div class="close-menu" onclick="toggleMenu()">✖</div>
+    <nav id="menu">
+        <div class="close-menu" onclick="toggleMenu()">✖</div>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="sobre-nos.html">Sobre nós</a></li>
-        <li><a href="planos.html">Plano Premium</a></li>
-        <li><a href="#">Login</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos2.html">Serviços</a></li>
+            <li><a href="sobre-nos.html">Sobre nós</a></li>
+            <li><a href="planos.html">Plano Premium</a></li>
+            <li><a href="#" data-open-login id="open-login">👤Login</a></li>
+        </ul>
+    </nav>
 
     <main>
-    <main id="conteudo_plano">
-        <div id="card-basico">
-            <h2 id="titulo_planos">Basico</h2>
-            <ul id="lista_plano"> 
-                <li>Treinos básicos personalizados com base em peso, idade e objetivo</li>
-                <li>Acesso inicial á biblioteca de exercícios</li>
-                <li>Sugestões simples de rotiinas de treino</li>
-                <li>Acesso á loja de suplementos</li>
-            </ul>
-            <button id="btn_planos">Iniciar</button>
-        </div>
-        <div id="card-premium">
-            <h2>Premium</h2>
-            <ul>
-                <li>Todos os recursos do plano básico</li>
-                <li>Acompanhamento com personal trainer online</li>
-                <li>Treinos altamente personalizados, considerando limitações e saúde</li>
-                <li>Dietas personalizadas conforme objetivos</li>
-                <li>Prioridade no suporte e acesso antecipado a novos recursos</li>
-            </ul>
-            <button id="btn_planos">Iniciar</button>
-        </div>
-    </main>
+        <main id="conteudo_plano">
+            <div id="card-basico">
+                <h2 id="titulo_planos">Basico</h2>
+                <ul id="lista_plano">
+                    <li>Treinos básicos personalizados com base em peso, idade e objetivo</li>
+                    <li>Acesso inicial á biblioteca de exercícios</li>
+                    <li>Sugestões simples de rotiinas de treino</li>
+                    <li>Acesso á loja de suplementos</li>
+                </ul>
+                <button id="btn_planos">Iniciar</button>
+            </div>
+            <div id="card-premium">
+                <h2 id="titulo_planos">Premium</h2>
+                <ul id="lista_plano">
+                    <li>Todos os recursos do plano básico</li>
+                    <li>Acompanhamento com personal trainer online</li>
+                    <li>Treinos altamente personalizados, considerando limitações e saúde</li>
+                    <li>Dietas personalizadas conforme objetivos</li>
+                    <li>Prioridade no suporte e acesso antecipado a novos recursos</li>
+                </ul>
+                <button id="btn_planos">Iniciar</button>
+            </div>
+        </main>
 
-     <script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("active");
-}
-</script>
+
+        <!-- Modal de Login (inicialmente escondido) -->
+
+        <div id="login-overlay" class="login-overlay hidden" aria-hidden="true">
+
+            <div class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+
+                <!-- Botão de fechar -->
+
+                <button type="button" class="fechar" id="login-close" aria-label="Fechar">✖</button>
+
+
+
+                <!-- LOGO NO TOPO -->
+
+                <figure class="logo-topo">
+
+                    <img src="fotos/logo.png" alt="Titan Fit">
+
+                </figure>
+
+
+
+                <h1 id="login-title">Entrar</h1>
+
+                <p class="subtitle">Faça login para acessar sua conta</p>
+
+
+
+                <form id="login-form" action="#" method="post" novalidate>
+
+                    <label for="login-email">E-mail</label>
+
+                    <input id="login-email" name="email" type="email" placeholder="seu@exemplo.com" required>
+
+
+
+                    <label for="login-password">Senha</label>
+
+                    <input id="login-password" name="password" type="password" placeholder="********" required>
+
+
+
+                    <button type="submit" id="login-submit" class="btn-continuar">
+
+                        Continuar
+
+                    </button>
+
+                </form>
+
+
+
+                <span class="divisor">ou</span>
+
+
+
+                <!-- Botões Sociais com imagens locais -->
+
+                <button type="button" class="btn-social" aria-label="Continuar com o Google">
+
+                    <img src="fotos/google_icon.png" alt="Google" class="social-icon">
+
+                    <span>continuar com Google</span>
+
+                </button>
+
+
+
+                <button type="button" class="btn-social" aria-label="Continuar com Apple">
+
+                    <img src="fotos/apple_icon.png" alt="Apple" class="social-icon">
+
+                    <span>continuar com Apple</span>
+
+                </button>
+
+
+
+                <div class="cadastro-texto">Não tem conta? <a href="">Criar agora</a></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- scripts -->
+        <script src="js/menu.js"></script>
+        <script src="js/modals.js"></script>
+
 </body>
+
 </html>
